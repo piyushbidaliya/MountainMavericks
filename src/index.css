@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+:root {
+  --font-family: "Quicksand", sans-serif;/*
+  --color-bg: #EEE2DC;
+  --color-blog: #BAB2b5;
+  --color-title: #AC3B61;
+  --color-subtext: #EDC7B7;
+  --color-text: #123C69;
+  */
+  --color-blog: #ffff;
+  --color-title: #33aefd;
+  --color-subtext: #8a9cb3;
+  --color-text: #000;
+  --color-footer: #2a3139;
+  --color-heading: #33aefd;
+  
+/*
+  --color-blog: black;
+  --color-title: green;
+  --color-subtext: #8a9cb3;
+  --color-text: white;
+  --color-footer: #2a3139;
+  --color-heading: orange;
+*/
+}
+
+body::-webkit-scrollbar{
+  
+  display: none;
+
+
+/* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+}
+              

@@ -1,0 +1,268 @@
+
+
+
+.home_container{
+    position: relative;
+    display: flex;
+    padding: 20px;
+    width: 100%;
+}
+
+.home_container img{
+    width: 100%;
+    height: auto;
+    filter: brightness(80%);
+    object-fit: cover;
+}
+
+.home_container-title{
+    align-self: center;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+}
+
+.home_container-title h1{
+    color: #fff;
+    font-size: 24px;
+    padding-left: 30px;
+}
+
+.home_container-title a{
+    cursor: pointer;
+    color: var(--color-blog);
+    text-decoration: none;
+}
+
+.home_container-title p{
+    background: var(--color-title);
+    border: 3px solid white;
+    width: 100px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.home_container-title-img{
+    width: 50%;
+    margin: auto;
+}
+
+.home_container-title-img img{
+    max-inline-size: 100%;
+    block-size: auto;
+    aspect-ratio: 2/1;
+    object-fit: contain;
+}
+
+
+
+.home_container-title-anim {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+.home_container-title-btn{
+    padding-left: 30px;
+}
+
+
+
+
+@media (max-width: 1045px) {
+    .home_container {
+        padding: 30px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .home_container img {
+        height: auto;
+    }
+
+    .home_container-title {
+        padding-left: 0;
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        font-size: 1.2rem;
+        top: 0;
+    }
+
+    .home_container-title-anim {
+        margin-top: 10px;
+        font-size: 1.2rem;
+
+    }
+
+    .home_container-title p{
+        padding-left: 0;
+        text-align: center;
+        width: 50%;
+        margin: 20px auto;
+    }
+
+}
+@media (max-width:650px){
+    .home_container-title h1{
+        font-size: 18px;
+    }
+
+    .home_container-title p{
+        font-size: 14px;
+    }
+
+    .home_container-title-anim{
+        font-size: 16px;
+    }
+
+    .home_container{
+        padding: 0;
+        height: 100%;
+    }
+
+}
+
+@media (max-width:450px){
+    .home_container-title h1{
+        font-size: 14px;
+    }
+
+    .home_container-title p{
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .home_container-title-anim{
+        font-size: 12px;
+    }
+
+    .home_container{
+        padding: 0;
+    }
+
+}
+
+.home_intro-container{
+    margin: 20px;
+}
+
+.home_intro-container p{
+    color: var(--color-text);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.home_intro-container span{
+    font-weight: 800;
+}
+
+
+.home_intro-card{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+  }
+
+  .home_intro-content{
+    width: 100%;
+    padding: 10px;
+  }
+
+  .home_intro-content p{
+    color: var(--color-text);
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .home_intro-content span{
+    font-weight: 800;
+  }
+
+
+
+
+.home_multicarousel-heading{
+    color: var(--color-heading);
+    margin: 3rem 4rem 10px 4rem;
+    border-bottom: 3px solid var(--color-heading);
+    font-family: var(--font-family);
+}
+
+.home_multicarousel-heading h1{
+    font-size: 32px;
+}
+
+
+.home_grid{
+    margin-top: 70px;
+}
+
+.home_grid-heading{
+    color: var(--color-heading);
+    margin: 10px 4rem 10px 4rem;
+    border-bottom: 3px solid var(--color-heading);
+    font-family: var(--font-family);
+}
+
+.home_grid-heading h1{
+    font-size: 32px;
+}
+
+.home_grid-heading span{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.home_blockgrid-container{
+    margin: 10px 4rem 10px 4rem;
+  }
+
+  .home_blockgrid-container p{
+    color: var(--color-text);
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+.home_blockgrid-container span{
+    font-weight: 800;
+}
+
+@media (max-width:786px) {
+    .home_blockgrid-container p{
+        text-align: center;
+      }   
+    
+      .home_grid-heading h1{
+        text-align: center;
+      }
+}
+
+
+@media (max-width:450px) {
+    .home_intro-container p{
+        font-size: 16px;
+      }   
+    
+      .home_intro-content p{
+        font-size: 16px;
+      }
+
+    .home_multicarousel-heading, .home_grid-heading{
+        border-bottom: 2px solid var(--color-title);
+    }
+    
+    .home_multicarousel-heading h1, .home_grid-heading h1{
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .home_grid-heading span, .home_blockgrid-container p{
+        font-size: 16px;
+    }
+}
+

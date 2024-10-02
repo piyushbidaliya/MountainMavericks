@@ -1,0 +1,42 @@
+.carousel-container img{
+    max-inline-size: 100%;
+    block-size: auto;
+    aspect-ratio: 2/1;
+    object-fit: fill;
+}
+
+.carousel-container{
+    padding: 20px 0;
+}
+
+.image-container {
+    position: relative;
+}
+  
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* You can adjust the background color and opacity */
+    color: #fff; /* You can adjust the text color */
+    padding: 10px;
+    text-align: center;
+}
+
+.text-overlay h2{
+    font-size: 20px;
+    text-align: center;
+}
+  
+@media (max-width:768px) {
+    .text-overlay h2{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:450px) {
+    .text-overlay h2{
+        font-size: 8px;
+    }
+}

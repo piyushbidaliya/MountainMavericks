@@ -1,0 +1,45 @@
+.banner {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-title);
+    overflow: hidden; /* Ensure contents don't overflow */
+  }
+  
+  .banner-content,
+  .banner-email {
+    padding: 10px;
+    animation: moveText 6s linear infinite; /* Adjust animation duration as needed */
+  }
+  
+  .banner-content p,
+  .banner-email p {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    margin-bottom: 0;
+    color: #fff;
+  }
+
+  .banner-content a, .banner-email a{
+    text-decoration: none;
+  }
+  
+  .banner-email i {
+    padding-right: 5px;
+  }
+  
+  @media (max-width: 450px) {
+    .banner-content p,
+    .banner-email p {
+      font-size: 0.7rem;
+    }
+  }
+  
+  @keyframes moveText {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

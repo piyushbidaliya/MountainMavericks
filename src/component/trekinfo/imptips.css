@@ -1,0 +1,32 @@
+.imptips{
+    background-color: var(--color-title);
+    text-align: center;
+}
+
+.imptips-heading{
+    padding: 20px;
+}
+
+.imptips-heading h1{
+    color: var(--color-blog);
+    font-family: var(--font-family);
+    font-size: 2rem;
+}
+
+.imptips-content{
+    padding: 0 20px;
+}
+
+.imptips-content ul li{
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+}
+
+.imptips-content p{
+    margin: 0;
+    color: var(--color-blog);
+    font-size: 1.5rem;
+    font-family: var(--font-family);
+}
+

@@ -1,0 +1,123 @@
+/* ContactUs.css */
+
+.app__contact-form-heading{
+    font-family: var(--font-family);
+    font-size: 30px;
+}
+.contact-margin{
+    padding-bottom: 20px;
+}  
+
+.contact-loc{
+    padding: 20px;
+}
+
+.contact-loc img{
+    max-inline-size: 100%;
+    block-size: auto;
+    aspect-ratio: 2/1;
+    object-fit: fill;
+}
+    
+.contact-us {
+    width: 50%;
+    margin: 0 auto ;
+    padding: 20px 1rem 1rem 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+  
+.contact-image{
+    width: 100%;
+}
+ 
+.contact-heading{
+    margin: 20px;
+}
+  
+.contact-heading h1{
+    text-align: center;
+    color: var(--color-heading);
+    border-bottom: 3px solid var(--color-heading);
+    font-size: 32px;
+    font-family: var(--font-family);
+
+}
+      
+.form-group {
+    margin-bottom: 15px;
+}
+      
+label {
+    display: block;
+    font-weight: bold;
+    color: var(--color-text);
+}
+      
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+      
+input[type="submit"] {
+    background-color: var(--color-title);
+    color: var(--color-text);
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+      
+
+    
+@media (max-width: 768px) {
+    .contact-us{
+        margin: 10px;
+        width: auto;
+    }
+  
+    .contact-heading h1{
+      font-size: 22px;
+    }
+}
+  
+  
+     /* Responsive adjustments for smaller screens */
+@media (max-width: 1080px) {
+    .contact_us {
+      max-width: 100%; /* Set the form width to full width */
+      margin-left: 0;
+    }
+  
+    .contact-heading {
+      margin: 20px 0; /* Reduce margin for better spacing */
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: 100%; /* Set input elements to full width */
+    }
+  
+}
+  
+  
+@media (max-width: 450px) {
+    .contact-loc{
+        padding: 0px;
+    }
+
+    .contact-heading h1{
+        border-bottom: 2px solid var(--color-title);
+    }
+}
+  

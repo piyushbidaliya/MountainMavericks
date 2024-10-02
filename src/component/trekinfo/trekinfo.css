@@ -1,0 +1,213 @@
+
+
+.Trek_info-img{
+    margin: 20px;
+    position: relative;
+}
+
+.d-block_w-100{
+    width: 100%;
+    height: auto;
+
+}
+
+.Trek_info-img img{
+    max-inline-size: 100%;
+    block-size: auto;
+    aspect-ratio: 2/1;
+    object-fit: fill;
+}
+
+.Trek_info-container{
+    margin: 20px;
+}
+
+.Trek_info-content, .Trek_info-itinerary{
+    padding: 20px;
+}
+
+.Trek_info-intinerary-border{
+    margin: 20px;
+    padding: 20px;
+}
+
+
+.Trek_info-content h2, .Trek_info-itinerary h2{
+    font-size: 24px;
+    font-family: var(--font-family);
+    color: var(--color-title);
+    border-bottom: 2px solid var(--color-title);
+    text-align: center;
+}
+
+.Trek_info-content h1, .Trek_info-itinerary h1{
+    font-size: 32px;
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+.trekde_container{
+    width: 100%;
+    padding: 10px;
+}
+
+.trekde_container{
+    padding-right: calc(10%-30px);
+}
+
+.trekde_container-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.trekde_container-title{
+    color: var(--color-title);
+    padding: 30px;
+    font-family: var(--font-family);
+
+}
+
+.trekde_container-title h1{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--font-family);
+
+}
+
+.trekde_container-content{
+    padding: 0px 30px;
+    border-right: 5px solid #000;
+    font-family: var(--font-family);
+
+}
+
+
+
+.trekde_container-box{
+    position: relative;
+    padding: 20px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: var(--color-blog);
+    transition: all 0.4s;
+    margin-bottom: 20px;
+
+}
+
+
+
+.trekde_container-box::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 10px; /* Adjust the size of the arrow */
+    border-color: transparent transparent transparent var(--color-subtext); /* Adjust the color of the arrow */
+    top: 4%;
+    left: calc(100% + 20px);
+    transform: translate(-105%, -4%);
+  }
+
+
+
+
+.trekde_container-box::before{
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    left: calc(100% + 26px);
+    top: 0;
+    background-color: yellow;
+    border: 4px solid var(--color-title);
+}
+
+.trekde_container-box:hover::before{
+    color: aqua;
+}
+
+
+.trekde_container-box h4{
+    position: relative;
+    color: var(--color-title);
+    width: 100%;
+    border-radius: 25px;
+    text-align: center;
+    font-family: var(--font-family);
+
+}
+
+.trekde_container-box h3{
+    font-size: 19px;
+    padding: 10px 0px 6px;
+    color: var(--color-text);
+    font-family: var(--font-family);
+
+    
+}
+
+.trekde_container-box p{
+    line-height: 1.2;
+    color: var(--color-subtext);
+    font-size: 17px;
+    font-family: var(--font-family);
+
+}
+
+.trekde_container-box ul li{
+    color: #fff;
+    margin-left: 10px;
+}
+
+@media(max-width:900px) {
+    .trekde_container-box::after{
+        left: calc(100% + 20px);
+    }
+    
+}
+
+@media(max-width:768px){
+
+    .trekde_container-row{
+        grid-template-columns: 1fr;
+    }
+
+    .trekde_container-col:nth-child(2){
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:450px){
+    .trekde_container-content{
+        padding: 0;
+        border-right: none;
+    }
+
+    .trekde_container-box::before{
+        border: none;
+        content: none;
+    }
+    .trekde_container{
+        padding: 0;
+    }
+
+    .trekde_container-box h4{
+        font-size: 18px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .Trek_info-content h1{
+        font-size: 20px;
+        text-align: justify;
+    }
+    .Trek_info-content p{
+        text-align: justify;
+    }
+
+    .text-overlay h2{
+        font-size: 8px;
+    }
+
+}
